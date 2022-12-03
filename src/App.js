@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Req from './req'
 function App() {
 
   return (
@@ -20,6 +20,7 @@ function App() {
         </a>
         { }
       </header>
+      <button onClick={Req}>Знайти пиво</button>
     </div>
   );
 }
