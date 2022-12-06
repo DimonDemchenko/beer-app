@@ -1,17 +1,11 @@
 
 import React from "react"
-const Weather = (object)=>{
-    const data = ()=>{
-        if(object!=undefined)
-        {
-                return object;
-        }
-    }
+const Weather = (props)=>{
+
     return (<div className="weather_main">
         
-         <p>{ JSON.stringify(data())}
-         
-         </p>
+         <p>{ props.coord?.lon}</p>
+         <ul>{ props.weather?.map((elem)=>(<li> {elem.main}</li>))}</ul>
     </div>)
 }
 export default Weather;
