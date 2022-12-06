@@ -13,9 +13,8 @@ function App() {
       setDaya(response.data)
     })()
   }, [])
-
   return (
-    <Weather base={Daya.base} weather_arr={Daya.weather} coords={Daya.coords} />
+    <Weather base={Daya.base} weather_arr={Daya.weather} coords={Daya.coord} />
   )
 }
 export default App;
