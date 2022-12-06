@@ -4,7 +4,7 @@ import Req from "./req";
 function App() {
   return (
     <div className="App">
-      <button onClick={Req}>Знайти пиво</button>
+      <button onClick={Req}>Знайти пивовпвапвап</button>
     </div>
   );
 }
