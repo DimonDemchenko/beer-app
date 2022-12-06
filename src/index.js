@@ -2,13 +2,14 @@ import React, { useContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+import Weather from "./modules/weather";
 export const bababoe = React.createContext({})
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 
-  <bababoe.Provider value={{}}>
+  <bababoe.Provider value={new Weather()}>
     <App />
   </bababoe.Provider>
 

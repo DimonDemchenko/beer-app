@@ -1,8 +1,13 @@
 import "./App.css";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Weather from "./component/weather_main/weather";
+import Form from "./component/form/form";
+import { bababoe } from "./index"
+
 function App() {
+  const bababoe2 = useContext(bababoe)
+  bababoe2.Maxim = "Top"
   const API = "b559aceca04d95d3c0456a935e8db281";
   // "b559aceca04d95d3c0456a935e8db281"
   // "ed2eb291a45f1ecaf471c5d34fe79cbf";
@@ -16,9 +21,12 @@ function App() {
       setDaya2(response2.data)
     })()
   }, [])
-  { console.log(Daya2) }
+  { console.log(bababoe2) }
   return (
-    <Weather {...Daya} />
+    <div>
+      <Form />
+      <Weather {...Daya} />
+    </div>
 
   )
 }
