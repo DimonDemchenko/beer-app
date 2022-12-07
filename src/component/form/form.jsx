@@ -5,11 +5,10 @@ const Form = ()=>{
     const [search, setSearch] = useState('');
    function validate()
    {
-    const Answer=search
-    console.log(Answer)
+    bababoe.city=search
+    console.log(bababoe.city)
    }
-   const Dimon = useContext(bababoe)
-   console.log(Dimon)
+
     return(
         <form>
             <input  placeholder="SOME city of my dream"   type="text" 
