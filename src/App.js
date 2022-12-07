@@ -22,11 +22,8 @@ function App() {
   // }, [])
   return (
     <div>
-      {new Weather.MyFunc()}
       <Form />
-
     </div>
-
   )
 }
 export default App;
