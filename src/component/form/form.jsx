@@ -4,11 +4,12 @@ import {bababoe} from "../../index"
 import Weather from "../../modules/weather";
 const Form = ()=>{
     const [search, setSearch] = useState('');
-   function validate()
+   async function validate()
    {
     bababoe.city=search
     const classWeather = new Weather;
-    classWeather.Myfunc(bababoe.city)
+    await classWeather.Myfunc(bababoe.city)
+    classWeather.Render(bababoe.weather)
    }
     return(
         <form>

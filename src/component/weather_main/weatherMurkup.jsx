@@ -1,8 +1,6 @@
-import React from "react"
-import { bababoe } from "../..";
-const Weather = (props)=>{
 
-    console.log(bababoe.city)
+import React from "react"
+const Weather = (props)=>{
 
     return (<div className="weather_main">
         
